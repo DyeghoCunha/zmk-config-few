@@ -1,9 +1,45 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
-  LOW:
-  - ↹
+  Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '?'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - MUTE
+  - PAUSE
+  - N
+  - M
+  - ','
+  - .
+  - {t: ;, type: held}
+  - '5'
+  - {t: Mods, type: held}
+  - {t: ␣, h: LSHIFT}
+  - ␣
+  - {t: Sym., h: sticky}
+  - '6'
+  Sym.:
   - '1'
   - '2'
   - '3'
@@ -14,77 +50,226 @@ layers:
   - '8'
   - '9'
   - '0'
-  - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
+  - <
+  - '@'
+  - (
+  - '{'
+  - '['
+  - '='
+  - {t: '~', h: sticky}
+  - ''''
+  - +
+  - '*'
+  - '>'
+  - $
+  - )
+  - '}'
+  - ']'
+  - MUTE
+  - RGB ON
+  - '%'
+  - '!'
+  - '"'
+  - '-'
+  - {t: ^, h: sticky}
+  - ''
+  - FRow
+  - Sym.2
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  Mods:
+  - Esc
+  - ⏮️
+  - ⏯
+  - ⏭️
+  - PAUSE
+  - Page Up
+  - Home
+  - ↑
+  - End
+  - Caps Lock
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
+  - {t: LSHIFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - $$mdi:apple-keyboard-option$$
+  - Page Down
   - ←
   - ↓
-  - ↑
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - ␣
-  - ⏎
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-  RAI:
+  - ⌦
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
   - ↹
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
+  - Ctl+V
+  - MUTE
+  - PAUSE
+  - Ctl+⌫
   - $$mdi:backspace-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
   - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
-  - ␣
-  - ⏎
-  - {t: '&studio_unlock', type: held}
+  - ENTER
+  - FRow
+  - ''
+  FRow:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
+  - {t: LSHIFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - $$mdi:apple-keyboard-option$$
+  - F11
+  - F12
+  - PRINTSCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - RGB ON
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  Sym.2:
+  - {t: Sft+', h: sticky}
+  - _
+  - '-'
+  - AMPERSAND
+  - '#'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '~', h: sticky}
+  - {t: '''', h: sticky}
+  - \
+  - '|'
+  - /
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ^, h: sticky}
+  - ''
+  - ''
+  - ''
+  - AltGr+W
+  - MUTE
+  - RGB ON
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - {type: held}
+  - ''
+  Sett.:
+  - Boot
+  - ''
+  - ''
+  - BT CLR
+  - BT 1
+  - BT 4
+  - ''
+  - '&unstick'
+  - ''
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 2
+  - BT 5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 3
+  - MUTE
+  - RGB ON
+  - {t: BT, h: '5'}
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+combos:
+- p: [33, 31]
+  k: Base
+- p: [33, 34]
+  k: Sym.2
+- p: [30, 31]
+  k: Sett.
+- p: [14, 13]
+  k: BACKSPACE
+- p: [4, 3]
+  k: ↹
+- p: [0, 1]
+  k: ESCAPE
+- p: [20, 21]
+  k: {t: LEFT CONTROL, h: sticky}
+- p: [10, 11]
+  k: {t: LEFT SHIFT, h: sticky}
+- p: [2, 3]
+  k: PLAY PAUSE
+- p: [23, 22, 24]
+  k: RETURN
+- p: [33, 34, 35, 36]
+  k: Gui+␣
+- p: [27, 28, 29]
+  k: RETURN
+- p: [15, 16]
+  k: BACKSPACE
+- p: [20, 10, 0]
+  k: '&crtlAlt'
+- p: [0, 4]
+  k: PRINTSCREEN
+- p: [20, 24]
+  k: Alt+Sft+F
+- p: [14, 20]
+  k: Ctl+`
+- p: [20, 4]
+  k: Ctl+B
+- p: [10, 14]
+  k: Ctl+/
